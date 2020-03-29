@@ -1,0 +1,29 @@
+
+p {
+    font-size: medium;
+}
+
+.header-bg {
+    height: 200px;
+    position: relative;
+    background-position: top center; 
+    opacity: 80%;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    font-size: medium;
+}
+
+div.col {
+    position: relative;
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px; }
+
+.form-group {
+    position:relative;
+    height:50px;
+}

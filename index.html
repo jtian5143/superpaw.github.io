@@ -3,62 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <title>My Personal Web Page</title>
-    <style>
-        div.sidebar {
-            background-color:#343434 ;
-            height:1138px;
-            width:414px;
-            float:left;
-            line-height: 30px;
-        }/*id selector*/
-        div.rect {
-            position:relative;
-            top:100px;
-            left:55px;
-            color:white;
-            text-align: center;
-            border:2px solid white;
-            padding:10px 20px;
-            width:250px;
-        }
-        h1.highligh {
-            line-height: 120px;
-            font-family:sans-serif;
-            color: white;
-            font-size:40px;
-            font-weight: bold;
-            text-align: center;
-        }
-        img.center {
-            position: relative;
-            left:80px;
-            righ:70px;
-            top:50px;
-            border-radius: 100%;/*Shape of circle*/
-        }
+    <link href="css/integerated_style.css" rel="stylesheet" media="screen" type="text/css">
 
-        table.info {
-            position:relative;
-            left:80px;
-            righ:70px;
-            top:100px;
-            color:white;
-            cellpadding
-        }
+    <link rel = "stylesheet" href="css/bootstrap/css/bootstrap.css">
+    <link rel = "stylesheet" href="css/bootstrap/css/bootstrap-theme.css">
 
-    </style>
+    <script src="jquery.js"></script>
+    <script src="css/bootstrap/js/bootstrap.js"></script>
 </head>
-<body>
-    <div class = "sidebar">
-        <h1 class="highligh">Tian Jiaxin</h1>
-        <hr width="100"/>
-        <img class="center" src="profile.jpeg" width = "250" height="250" />
-        <div class="rect">
-            <li>Location : Wuhan</li>
-            <li>Mobile Phone:17310065383</li>
-            <li>E-mail: 8471090@qq.com</li>
-            <li>wechat: comictt71</li>
+
+<body>    
+    <table width = "100%" border = "0">
+        <tr>
+            <td class="header-bg" colspan="1" style="background-color: #CEE3D6;">
+                <nav>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav nav ml-auto" style="font-size: 10;">
+                            <li><a href="index.html" style="color:black;font-size: 15px;">Home</a></li>
+                            <li><a href="#contact" style="color:black;font-size: 15px;">Contact me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <h1 style="text-align: center;">Welcome To My Personal Webpage</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center">
+                <h3>Basic Information</h2>
+                <table class="center" width = "400px" border="0">
+                    <tr>
+                        <img src="images/profile.jpeg" width="200" height="200">
+                    </tr>
+                    <tr>
+                        <td><b>Name:</b> Tian Jiaxin</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email:</b> 19099775g@connect.polyu.hk</td>
+                    </tr>
+                    <tr>
+                        <td><b>Current Location:</b> Wuhan, Hubei</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td style="text-align: center">
+                <div class="container">
+                    <h2>About Me</h2>
+                    <div class="row">
+                        <p>Hey I am Jiaxin, a student currently studying in Hong Kong Polytechnique University.</p>
+                        <p>I am going to give a brief introduction about myself. I finished my undergraduate school and then I went to US for my first master degree</p>
+                        <p>If you ask me which part about US I like the most. I would say "different culture experience" without hesitation</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container">
+                    <div style="float: left; width: 33%;">
+                        <img src="images/detroit1.jpeg" width="90%">
+                    </div>
+                    <div style="float: left; width: 33%;">
+                        <img src="images/detroit2.jpeg" width="90%">
+                    </div>
+                    <div style="float: left; width:33%;">
+                        <img src="images/nmichigan.jpeg" width="90%">
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <section id="contact" style="padding-top: 50px;">
+        <div class="container">
+            <form style="padding-left: 500px;">
+                <div>
+                    <input class="form-group" type="text" placeholder="Your Name">
+                </div>
+                <div>
+                    <input class="form-group" type="text" placeholder="Your Email">
+                </div>
+                <div>
+                    <input class="form-group" type="text" placeholder="Message">
+                </div>
+                <div>
+                    <input type="submit" value="Send it!" style="cursor: pointer;">
+                </div>
+            </form>
         </div>
-    </div>
+
+    </section>
+
+
+
 </body>
 </html>
