@@ -15,7 +15,7 @@
 <body>    
     <table width = "100%" border = "0">
         <tr>
-            <td class="header-bg" colspan="1" style="background-color: #CEE3D6;">
+            <td class="header-bg" style="background-color: #CEE3D6;">
                 <nav>
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav nav ml-auto" style="font-size: 10;">
@@ -54,8 +54,11 @@
                     <h2>About Me</h2>
                     <div class="row">
                         <p>Hey I am Jiaxin, a student currently studying in Hong Kong Polytechnique University.</p>
-                        <p>I am going to give a brief introduction about myself. I finished my undergraduate school and then I went to US for my first master degree</p>
-                        <p>If you ask me which part about US I like the most. I would say "different culture experience" without hesitation</p>
+                        <p>I'm going to give a brief introduction about myself. I finished my undergraduate study in Wuhan and then I went to US for my first master degree</p>
+                        <p>If you ask me which part about US I like the most, I would say "different culture experience" without hesitation</p>
+                        <p>Below are the pictures of the city where I stayed for almost 5 years -  Detroit</p>
+                        <p>This is the place where I got my first job and I lived a life pretty much as what I like</p>
+                        <p>Even though I have left this city, I would never forget what it brought to me.</p>
                     </div>
                 </div>
             </td>
@@ -65,12 +68,39 @@
                 <div class="container">
                     <div style="float: left; width: 33%;">
                         <img src="images/detroit1.jpeg" width="90%">
+                        <span><p style="text-align: center;">Detriot downtown</p></span>
                     </div>
                     <div style="float: left; width: 33%;">
                         <img src="images/detroit2.jpeg" width="90%">
+                        <span><p style="text-align: center;">Detriot downtown</p></span>
                     </div>
                     <div style="float: left; width:33%;">
                         <img src="images/nmichigan.jpeg" width="90%">
+                        <span><p style="text-align: center;"> Northern Michigan</p></span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center">
+                <div class="container" style="padding-top: 50px;">
+                    <div class="row">
+                        <p>I am also a <span style="font-size:20px;;"><b>Huge</b></span> dog lover!! I have a super cuttie and her name is Paopao.</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="container">
+                    <div style="float: left; width: 33%;">
+                        <img src="images/dog2.jpeg" width="90%" style="overflow: hidden;">
+                    </div>
+                    <div style="float: left; width: 33%;">
+                        <img src="images/dog3.jpg" width="90%" style="overflow: hidden;">
+                    </div>
+                    <div style="float: left; width:33%;">
+                        <img src="images/dog4.jpg" width="90%" style="overflow: hidden;">
                     </div>
                 </div>
             </td>
@@ -79,7 +109,7 @@
 
     <section id="contact" style="padding-top: 50px;">
         <div class="container">
-            <form style="padding-left: 500px;">
+            <form action="#" method="POST">
                 <div>
                     <input class="form-group" type="text" placeholder="Your Name">
                 </div>
@@ -90,7 +120,7 @@
                     <input class="form-group" type="text" placeholder="Message">
                 </div>
                 <div>
-                    <input type="submit" value="Send it!" style="cursor: pointer;">
+                    <input type="submit" value="Send it!" style="cursor: pointer;" id = "test">
                 </div>
             </form>
         </div>
@@ -100,4 +130,8 @@
 
 
 </body>
+<script type="text/javascript">$("#test").click(function() {
+    alert("Not implemented yet");
+}
+)</script>
 </html>

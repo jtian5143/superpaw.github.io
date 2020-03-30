@@ -26,4 +26,5 @@ div.col {
 .form-group {
     position:relative;
     height:50px;
+    width: 30%;
 }
