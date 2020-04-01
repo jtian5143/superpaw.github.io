@@ -28,3 +28,7 @@ div.col {
     height:50px;
     width: 30%;
 }
+
+.has-padding {
+    padding-top: 50px;
+}

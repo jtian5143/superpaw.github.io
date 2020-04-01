@@ -2,38 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Personal Web Page</title>
+
     <link href="css/integerated_style.css" rel="stylesheet" media="screen" type="text/css">
 
     <link rel = "stylesheet" href="css/bootstrap/css/bootstrap.css">
     <link rel = "stylesheet" href="css/bootstrap/css/bootstrap-theme.css">
+    <link rel = "stylesheet" href="css/bootstrap/css/bootstrap.min.css">
 
     <script src="jquery.js"></script>
     <script src="css/bootstrap/js/bootstrap.js"></script>
 </head>
 
 <body>    
-    <table width = "100%" border = "0">
-        <tr>
-            <td class="header-bg" style="background-color: #CEE3D6;">
-                <nav>
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav nav ml-auto" style="font-size: 10;">
-                            <li><a href="index.html" style="color:black;font-size: 15px;">Home</a></li>
-                            <li><a href="#contact" style="color:black;font-size: 15px;">Contact me</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <h1 style="text-align: center;">Welcome To My Personal Webpage</h1>
-            </td>
-        </tr>
+        <section class="header-bg" style="background-color: #CEE3D6;">
+            <nav>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav nav ml-auto" style="font-size: 10;">
+                        <li><a href="index.html" style="color:black;font-size: 15px;">Home</a></li>
+                        <li><a href="#contact" style="color:black;font-size: 15px;">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 style="text-align: center; padding-top: 10px;">Welcome To My Personal Webpage</h1>
+        </section>
 
+    <table class="has-padding" width = "100%" border = "0">
         <tr>
             <td style="text-align: center">
                 <h3>Basic Information</h2>
                 <table class="center" width = "400px" border="0">
                     <tr>
-                        <img src="images/profile.jpeg" width="200" height="200">
+                        <img src="images/profile.jpeg" width="200" height="200" style="border-radius: 50%;">
                     </tr>
                     <tr>
                         <td><b>Name:</b> Tian Jiaxin</td>
@@ -107,7 +108,20 @@
         </tr>
     </table>
 
-    <section id="contact" style="padding-top: 50px;">
+    <section class="has-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h4></h4>
+                    <p></p>
+                </div>
+                <div class="col-md-3">.col</div>
+                <div class="col-md-3">.col</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="has-padding" id="contact">
         <div class="container">
             <form action="#" method="POST">
                 <div>
@@ -120,18 +134,15 @@
                     <input class="form-group" type="text" placeholder="Message">
                 </div>
                 <div>
-                    <input type="submit" value="Send it!" style="cursor: pointer;" id = "test">
+                    <input class="btn btn-primary" type="submit" value="Send it!" style="cursor: pointer;" id = "test">
                 </div>
             </form>
         </div>
-
     </section>
 
-
-
 </body>
-<script type="text/javascript">$("#test").click(function() {
-    alert("Not implemented yet");
-}
-)</script>
+    <script type="text/javascript">$("#test").click(function() {
+        alert("Not implemented yet");
+    }
+    )</script>
 </html>
